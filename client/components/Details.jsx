@@ -108,7 +108,7 @@ function Details() {
         >
           <BiArrowBack />
         </i>
-        <div className="text-3xl mx-10">{meal.strMeal}</div>
+        <div className="text-3xl mx-10 my-22">{meal.strMeal}</div>
       </div>
       <img
         src={meal.strMealThumb}
@@ -116,17 +116,17 @@ function Details() {
         alt="..."
       />
       <div className="my-5 text-2xl">
-        <div>Instruction</div>
-        <p className="px-10 py-10 text-base">{meal.strInstructions}</p>
+        <div className="ml-12">Instructions</div>
+        <p className="px-12 py-10 text-base">{meal.strInstructions}</p>
 
-        <div className="text-2xl">Ingredients</div>
+        <div className="text-2xl ml-12">Ingredients</div>
 
         <div className=" flex-row">
           {ingredients.map((ingredient) => {
             return ingredient[0] != '' || null ? (
               <div
                 key={ingredient[0]}
-                className="flex text-base flex-row justify-around"
+                className="border hover:bg-blue-200 flex text-base flex-row justify-around"
               >
                 <div className="mr-5">{ingredient[1]}</div>
                 <div>{ingredient[0]}</div>
