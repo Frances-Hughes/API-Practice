@@ -103,7 +103,7 @@ function Details() {
     <main className="h-full bg-slate-100 text-black flex flex-col justify-center items-center">
       <div className="flex flex-row justify-between items-center">
         <i
-          className="text-2xl bg-white rounded-full p-2 hover:bg-green-300"
+          className="text-2xl bg-white rounded-full p-2 hover:bg-blue-300"
           onClick={() => navigate(-1)}
         >
           <BiArrowBack />
